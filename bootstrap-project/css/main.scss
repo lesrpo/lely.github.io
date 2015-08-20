@@ -1,0 +1,104 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+/* CUSTOM STYLES */
+h1,h2,h3,h4,h5,h6{
+	font-family: fantasy !important;
+	color:black !important;
+}
+a{
+	color:black !important;
+}
+a:hover,a:active,a:visited{
+	color:back;
+	text-decoration:none !important;
+}
+p{
+	font-size:16px;
+}
+.site-title img {
+    width: 125px;
+}
+
+.page-header {
+    border-top: none;
+    background-color:#4DFFFF
+}
+.site-nav {
+    line-height: 70px;
+}
+.item{
+	width:330px;
+    border: 1px solid #F5F5F5;	
+}
+.item a img{
+	width:330px;
+}
+.item-title{
+	margin:15px;
+}
+.item-text{
+	color:#747474;
+	margin:15px;
+}
+.item-date{
+	color:#C0C0C0;
+}
+.tr{
+	text-align:right;
+}
+.margin10{
+	margin:10px;	
+}
+.site-footer {
+    background-color: beige;
+}
