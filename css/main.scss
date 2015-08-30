@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
 a{
 	color:black !important;
 }
-a:hover,a:active,a:visited{
+a:active,a:visited{
 	color:back;
 	text-decoration:none !important;
 }
@@ -71,7 +71,7 @@ p{
 
 .page-header {
     border-top: none;
-    background-color:#4DFFFF
+    background-color:#FF9999
 }
 .site-nav {
     line-height: 70px;
@@ -100,7 +100,7 @@ p{
 	margin:10px;	
 }
 .site-footer {
-    background-color: beige;
+    background-color: #FFFFF0;
 }
 #container{
     max-width: 540px;
